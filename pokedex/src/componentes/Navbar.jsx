@@ -1,12 +1,12 @@
-import { NavLink } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const setSeccion = ({ isActive }) => (isActive ? "active" : undefined);
 
   return (
-    <div className="flex justify-content-between bg-danger p-3">
+    <div className="d-flex justify-content-between bg-danger p-3">
       <span>Pokedex</span>
-      <div className="flex gap-3">
+      <div className="d-flex gap-3">
         <NavLink className={setSeccion} to="/">
           Home
         </NavLink>
