@@ -24,7 +24,7 @@ const Pokemones = () => {
 
   return (
     <div className="selector">
-      <span>Selecciona un pokemon de la lista ...</span> <hr />
+      <h2>Selecciona un pokemon de la lista ...</h2>
       <div>
         <img src="https://i.gifer.com/2iiJ.gif" alt="" />
       </div>

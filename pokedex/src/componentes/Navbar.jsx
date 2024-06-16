@@ -6,12 +6,13 @@ const Navbar = () => {
 
   return (
     <nav className="navcss">
-      <span>
-        <CgPokemon />
-        Pokedex
-      </span>
+      <div>
+        {" "}
+        <CgPokemon size={25} />
+      </div>
+      <span>Pokedex</span>
       <div className="links">
-        <NavLink className={setSeccion} to="/">
+        <NavLink className={setSeccion} to="/react_router_-pokedex">
           Home
         </NavLink>
         <NavLink className={setSeccion} to="/pokemones">
