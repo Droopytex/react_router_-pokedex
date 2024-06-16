@@ -1,12 +1,16 @@
 import { NavLink } from "react-router-dom";
+import { CgPokemon } from "react-icons/cg";
 
-export default function Navbar() {
+const Navbar = () => {
   const setSeccion = ({ isActive }) => (isActive ? "active" : undefined);
 
   return (
-    <div className="d-flex justify-content-between bg-danger p-3">
-      <span>Pokedex</span>
-      <div className="d-flex gap-3">
+    <nav className="navcss">
+      <span>
+        <CgPokemon />
+        Pokedex
+      </span>
+      <div className="links">
         <NavLink className={setSeccion} to="/">
           Home
         </NavLink>
@@ -14,6 +18,8 @@ export default function Navbar() {
           Pokemones
         </NavLink>
       </div>
-    </div>
+    </nav>
   );
-}
+};
+
+export default Navbar;

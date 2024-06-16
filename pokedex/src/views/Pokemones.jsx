@@ -23,9 +23,13 @@ const Pokemones = () => {
   }, []);
 
   return (
-    <div>
+    <div className="selector">
+      <span>Selecciona un pokemon de la lista ...</span> <hr />
+      <div>
+        <img src="https://i.gifer.com/2iiJ.gif" alt="" />
+      </div>
       <select
-        className="m-3"
+        className="sel_poke"
         value={name}
         onChange={(e) => setName(e.target.value)}
       >
@@ -38,7 +42,10 @@ const Pokemones = () => {
           </option>
         ))}
       </select>
-      <button className="m-3" onClick={() => navegar(`/pokemones/${name}`)}>
+      <button
+        className="ver_poke"
+        onClick={() => navegar(`/pokemones/${name}`)}
+      >
         Ver Pokemon
       </button>
     </div>

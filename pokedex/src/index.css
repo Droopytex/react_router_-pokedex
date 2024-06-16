@@ -13,21 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  margin: 0px auto;
+  max-width: 1024px;
 }
 
 h1 {
@@ -37,4 +25,83 @@ h1 {
 
 .active {
   color: rgb(246, 235, 18);
+}
+
+.navcss {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+  padding: 10px;
+  gap: 10px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: fit-content;
+  background-color: #454242;
+}
+.pokecentral {
+  max-width: 450px;
+  margin: 10px;
+}
+
+.card {
+  max-width: 200px;
+  margin: 10px;
+  border-radius: 10px solid;
+  background-color: #454242;
+}
+
+.navcss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+  padding: 10px;
+  gap: 10px;
+}
+
+.links {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #454242;
+}
+
+.h3 {
+  font-style: italic;
+  text-transform: uppercase;
+}
+.lista {
+  text-decoration: none;
+}
+
+.ver_poke {
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+}
+
+.sel_poke {
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  background-color: #616161;
+  border-radius: 10px;
 }

@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Card from "react-bootstrap/Card";
 
 const PokeInfo = () => {
   const { name } = useParams();
@@ -22,9 +23,19 @@ const PokeInfo = () => {
   }, [name]);
 
   return (
-    <div>
-      <h1>{pokemon?.name}</h1>
-      <img src={pokemon?.sprites?.front_default} />
+    <div className="selector">
+      <Card style={{ width: "18rem" }} className="tarjeta">
+        <h3 className="h3">{pokemon?.name}</h3>
+        <Card.Img variant="top" src={pokemon?.sprites?.front_default} />
+        <Card.Body>
+          <Card.Text>
+            <span>Peso: {pokemon?.weight}</span> <hr></hr>
+            <span>Altura: {pokemon?.height}</span>
+            <hr></hr>
+            <span>Orden en lista: {pokemon?.order}</span>
+          </Card.Text>
+        </Card.Body>
+      </Card>
     </div>
   );
 };
