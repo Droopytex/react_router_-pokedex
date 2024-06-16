@@ -1,8 +1,8 @@
 ### Desafío React II
 ## Habilidades a evaluar
- ● Obtener los parámetros de una ruta con useParams()
- ● Redireccionar programáticamente usando useNavigate()
- ● Usar NavLink para definir una clase activa a la ruta que se esté visitando.
+ -. Obtener los parámetros de una ruta con useParams()
+ -. Redireccionar programáticamente usando useNavigate()
+ -. Usar NavLink para definir una clase activa a la ruta que se esté visitando.
 
 Se usa la Poke API para obtener los datos de los pokemones y cargarlos en las vistas que correspondan.
 
