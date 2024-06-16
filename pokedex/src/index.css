@@ -56,7 +56,7 @@ h1 {
 
 .navcss {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: red;
   padding: 10px;
